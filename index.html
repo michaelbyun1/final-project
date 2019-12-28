@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment A3, Part A</title>
+    <meta name="description" content="An online catalogue for Fire Wingz">
+    <meta name="author" content="Michael Byun">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    <!-- 
+      Deliverable:  Assignment
+      Name:         Jeeho Byun
+      Student #:    101229610
+      Email:        jeeho.byun@georgebrown.ca
+      Submitted:    August 2, 2019
+      Notes:        Hi!
+
+
+      [x] I have reviewed the appropriate checklist before submitting this work
+    -->
+    
+    <header>
+      <!-- Site logo -->
+      <div class="top-logo">
+        <a href="index.html"><img src="img/fire-wingz-logo-final.svg" alt="Fire Wingz Logo"></a>
+      </div>
+
+      <!-- Navigation menu and toggle button (non-functional) -->
+      <nav>
+        <button type="button">
+          <i class="material-icons">menu</i>
+        </button>
+        <!-- Search for a product (non-functional) -->
+        <form class="search-option">
+          <fieldset>
+            <label for="search">Search</label>
+            <input type="text" name="search" id="search" placeholder="Search here...">
+          </fieldset>
+          <button type="button"><i class="material-icons">search</i></button>
+        </form>
+        <div class="spice-levels">
+          <ul>
+            <li><a href="#">Legendary</a></li>
+            <li><a href="#">Spicy</a></li>
+            <li><a href="#">Mild</a></li>
+            <li><a href="#">Soft</a></li>
+          </ul>
+        </div>
+        <!-- Additional nav links -->
+        <div class="additional-links">
+          <ul>
+            <li><a href="#"><i class="material-icons">favorite_border</i></a></li>
+            <li><a href="#"><i class="material-icons" id="shopCart">shopping_cart</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <h1 class="slogan">From Our Home To Yours</h1>
+        <h2 class="filter-heading">In a rush? We got you covered.</h2>
+        <button id="show-less">Toggle Filter</button>
+        <!-- Filtering product form -->
+        <form id ="filter-form" class="filter-form">
+          <fieldset>
+            <h3>Sort By</h3>
+            <select name="sort" id="sort">
+              <option value="price-high">Price, highest to lowest</option>
+              <option value="price-low">Price, lowest to highest</option>
+              <option value="highest">Highest rated</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <h3>Spice Level</h3>
+            <ul>
+              <li><input type="checkbox" name="Spice Level" value="Legendary" id="legendary"> <label for="legendary">Legendary</label></li>
+              <li><input type="checkbox" name="Spice Level" value="Spicy" id="spicy"> <label for="spicy">Spicy</label></li>
+              <li><input type="checkbox" name="Spice Level" value="Mild" id="mild"> <label for="mild">Mild</label></li>
+              <li><input type="checkbox" name="Spice Level" value="Soft" id="soft"> <label for="soft">Soft</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <h3>Sizes</h3>
+            <ul>
+              <li><input type="checkbox" name="size" value="1/2-pound" id="1/2-pound"> <label for="1/2-pound">1/2 Pound</label></li>
+              <li><input type="checkbox" name="size" value="1-pound" id="1-pound"> <label for="1-pound">1 Pound</label></li>
+              <li><input type="checkbox" name="size" value="2-pounds" id="2-pounds"> <label for="2-pounds">2 Pounds</label></li>
+              <li><input type="checkbox" name="size" value="3-pounds" id="3-pounds"> <label for="3-pounds">3 Pounds</label></li>
+              <li><input type="checkbox" name="size" value="3.5-pounds" id="3.5-pounds"> <label for="3.5-pounds">Savage (3.5 Pounds)</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <h3>Rating Above</h3>
+            <ol>
+              <li>
+                <input type="radio" name="rating" value="4" id="above-4">
+                <label for="above-4">
+                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="3" id="above-3">
+                <label for="above-3">
+                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="2" id="above-2">
+                <label for="above-2">
+                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="1" id="above-1">
+                <label for="above-1">
+                  <i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+                </label>
+              </li>
+            </ol>
+          </fieldset>
+        </form>
+      </header>
+
+      <h4 class="wingz">Our Wingz</h4>
+      <section id="products" class="products"></section>
+    </main>
+
+    <footer>
+      <div class="page-links">
+        <ol>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ol>
+      </div>
+    </footer>
+
+    <footer>
+      <div class="newsletter">
+        <h3>Get the latest news and fire deals delivered straight to your inbox!</h3>
+        <input class="email-text" type="text" placeholder="Email address">
+        <button class="button" onclick="alert('Thanks! Welcome to the club!')">Subscribe</button>
+      </div>
+      <div class="policies">
+        <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility Policy</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li><a href="#"><i class="material-icons">face</i> Facebook</a></li>
+          <li><a href="#"><i class="material-icons">camera_alt</i> Instagram</a></li>
+          <li><a href="#"><i class="material-icons">alternate_email</i> Twitter</a></li>
+        </ul>
+      </div>
+      <p class="copyright-tag">Fire Wingz &copy; 2019</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

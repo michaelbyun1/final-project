@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment A3, Part B</title>
+    <meta name="description" content="An online catalogue for Fire Wingz">
+    <meta name="author" content="Michael Byun">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+  </head>
+  <body>
+
+    <!-- 
+      Deliverable:  Assignment
+      Name:         Jeeho Byun
+      Student #:    101229610
+      Email:        jeeho.byun@georgebrown.ca
+      Submitted:    August 19, 2019
+      Notes:        Hi!
+
+
+      [x] I have reviewed the appropriate checklist before submitting this work
+    -->
+    
+    <header>
+      <!-- Top navigation bar and toggle button (non-functional) -->
+      <div class="top-bar">
+        <div class="top-logo">
+          <a href="index.html"><img src="img/fire-wingz-logo-final.svg" alt="Fire Wingz Logo"></a>
+        </div>
+      </div>
+      
+      <nav class="navigation">
+        <button type="button">
+          <i class="material-icons">menu</i>
+        </button>
+        <!-- Search for a product (non-functional) -->
+        <form class="search-option">
+          <fieldset>
+            <label for="search">Search</label>
+            <input type="text" name="search" id="search" placeholder="Search here...">
+          </fieldset>
+          <button type="button"><i class="material-icons">search</i></button>
+        </form>
+        <div class="spice-levels">
+          <ul>
+            <li><a href="#">Legendary</a></li>
+            <li><a href="#">Spicy</a></li>
+            <li><a href="#">Mild</a></li>
+            <li><a href="#">Soft</a></li>
+          </ul>
+        </div>
+        <!-- Additional nav links -->
+        <div class="additional-links">
+          <ul>
+            <li><a href="#"><i class="material-icons">favorite_border</i></a></li>
+            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="product-one">
+      <!-- To Dine in Hell Product -->
+      <article>
+        <h1 class="to-dine-in-hell">To Dine in Hell Wingz</h1>
+        <div class="product-image"><img src="img/to-dine-in-hell-wingz.jpg" alt="To Dine in Hell Wingz"></div>
+        <div class="favorite">
+          <button type="button"><i class="material-icons">favorite</i></button>
+        </div>
+        <div class="product-description">
+          <p>So you've come to try our most famous and spiciest wingz known to man. Breaded and seasoned to perfection all while featuring our special blend of Carolina Reaper peppers and secret spices, our most famous wingz comes at a whopping 2.2 million SHU for those who can handle it. You might want to keep a glass of milk handy.</p>
+        </div>
+        <div class=servings>
+          <h2 class="nutrition-facts-text">Nutrition Facts</h2>
+          <span>All Servings Include Celery, Carrots, and Hummus for Our Health-Conscious Friends</span>
+          <p>Per Serving Size: 0.5 lbs</p>
+        </div>
+        <div class="nutrition-facts">
+          <ul>
+            <li>495 Cals</li>
+            <li>33g Total Fat</li>
+            <li>105mg Cholesterol</li>
+            <li>410mg Sodium</li>
+            <li>10g Total Carbohydrates (7g Sugar)</li>
+            <li>39.5g Protein</li>
+            <li>495 Cals</li>
+          </ul>
+        </div>
+        <div class="vitamins">
+          <ul>
+            <li>Vitamin A: 2%</li>
+            <li>Vitamin C: 6%</li>
+            <li>Calcium: 5%</li>
+            <li>Iron: 14.5%</li>
+            <li>Spice: 110%</li>
+          </ul>
+        </div>
+        <dl class="additional-info">
+          <dt>Spice Level</dt>
+          <dd><span>Legendary</span>
+        
+          <dt>Rating</dt>
+          <dd>4.5 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+        </dl>
+        <h2 class="sizes">Sizes</h2>
+        <div class="add-to-cart">
+          <a href="#" class="btn"><i class="material-icons">shopping_cart</i>1/2 Pound</a>
+          <a href="#" class="btn"><i class="material-icons">shopping_cart</i>1 Pound</a>
+          <a href="#" class="btn"><i class="material-icons">shopping_cart</i>2 Pounds</a>
+          <a href="#" class="btn"><i class="material-icons">shopping_cart</i>3 Pounds</a>
+          <a href="#" class="btn"><i class="material-icons">shopping_cart</i>Savage</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="newsletter">
+        <h3>Get the latest news and fire deals delivered straight to your inbox!</h3>
+        <input class="email-text" type="text" placeholder="Email address">
+        <button class="button" onclick="alert('Thanks! Welcome to the club!')">Subscribe</button>
+      </div>
+      <div class="policies">
+        <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility Policy</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li><a href="#"><i class="material-icons">face</i> Facebook</a></li>
+          <li><a href="#"><i class="material-icons">camera_alt</i> Instagram</a></li>
+          <li><a href="#"><i class="material-icons">alternate_email</i> Twitter</a></li>
+        </ul>
+      </div>
+      <div class="bottom-logo">
+        <a href="index.html"><img src="img/fire-wingz-logo-final.svg" alt="Fire Wingz Logo"></a>
+      </div>
+      <p class="copyright-tag">Fire Wingz &copy; 2019</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>  

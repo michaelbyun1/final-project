@@ -1,0 +1,281 @@
+.spice-levels ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.spice-levels a {
+  background-color: var(--other);
+  display: block;
+  text-decoration: none;
+  padding: 0.8em;
+  text-align: center;
+  color: var(--text);
+  text-transform: uppercase;
+  font-size: 1.1em;
+  box-shadow: var(--shadow);
+}
+
+.search-option fieldset {
+  background-color: var(--other);
+  box-sizing: content-box;
+  width: 20%;
+  border: none;
+  padding: 0.8em;
+  color: var(--text);
+}
+
+.additional-links ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.additional-links a {
+  background-color: var(--other);
+  display: block;
+  text-decoration: none;
+  padding: 0.8em;
+  text-align: center;
+  color: var(--text);
+  font-size: 1.1em;
+  box-shadow: var(--shadow);
+}
+
+.slogan {
+  font-family: cursive;
+  text-align: center;
+  text-decoration: underline;
+  padding: 15px;
+}
+
+.filter-form {
+  background-color: var(--other);
+  padding: 0.8em;
+  color: var(--text);
+  font-size: 1.1em;
+  box-shadow: var(--shadow);
+}
+
+.menu {
+  text-align: center;
+  font-size: 2.2em;
+  background-color: var(--other);
+  color: var(--text);
+}
+
+.menu-grid {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  margin: 40px;
+  text-align: center;
+  list-style: none;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.spice-levels a:hover {
+  background-color: var(--text);
+  color: var(--other);
+}
+
+.see-more a:hover {
+  background-color: var(--text);
+  color: var(--other);
+}
+
+.page-links ol {
+  display: grid;
+  grid-gap: 5px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.page-links a {
+  background-color: var(--other);
+  display: block;
+  text-decoration: none;
+  padding: 0.8em;
+  text-align: center;
+  color: var(--text);
+  font-size: 1.1em;
+  box-shadow: var(--shadow);
+}
+
+.newsletter {
+  text-align: center;
+}
+
+.policies ul {
+  display: grid;
+  grid-gap: 5px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.policies a {
+  background-color: var(--other);
+  display: block;
+  text-decoration: none;
+  padding: 0.8em;
+  text-align: center;
+  color: var(--text);
+  font-size: 1.1em;
+  box-shadow: var(--shadow);
+}
+
+.social-media ul {
+  display: grid;
+  grid-gap: 5px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.social-media a {
+  background-color: var(--other);
+  display: block;
+  text-decoration: none;
+  padding: 0.8em;
+  text-align: center;
+  color: var(--text);
+  font-size: 1.1em;
+  box-shadow: var(--shadow);
+}
+
+.copyright-tag {
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--other);
+  color: var(--text);
+  border: 0;
+  text-align: center;
+  padding: 1px 10px;
+  margin: 10px;
+  font-size: 1.1em;
+  box-shadow: var(--shadow);
+}
+
+.page-links a:hover {
+  background-color: var(--text);
+  color: var(--other);
+}
+
+.policies a:hover {
+  background-color: var(--text);
+  color: var(--other);
+}
+
+.social-media a:hover {
+  background-color: var(--text);
+  color: var(--other);
+}
+
+.top-bar {
+  background-color: #ffaf5b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navigation {
+  position: relative;
+  top: 100px;
+}
+
+.top-logo {
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-one {
+  position: relative;
+  top: 100px;
+}
+  
+.to-dine-in-hell {
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.product-image {
+  text-align: center;
+}
+
+.favorite {
+  text-align: center;
+  padding: 0.3em 1em;
+  margin: 0.4em;
+}
+
+.product-description {
+  text-align: center;
+}
+
+.servings {
+  text-align: center;
+}
+
+.nutrition-facts {
+  list-style-position: inside;
+  text-align: center;
+}
+
+.nutrition-facts-text {
+  text-decoration: underline;
+}
+
+.vitamins {
+  list-style-position: inside;
+  text-align: center;
+}
+
+.additional-info {
+  text-align: center;
+}
+
+.sizes {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.add-to-cart {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer {
+  position: relative;
+  top: 100px;
+}
+
+.bottom-logo {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Media Queries */
+@media (max-width: 640px) {
+  .spice-levels ul {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 641px) {
+  .nutrition-facts-text {
+    text-decoration: none;
+}
